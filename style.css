@@ -12,6 +12,8 @@ body {
   place-items: center;
   background-color: #000;
   text-align: center;
+  font-size: 2rem;
+  color: #000;
 }
 .container {
   width: 450px;
@@ -56,11 +58,14 @@ body {
   transform: translateY(-50%);
   color: hsl(173, 57%, 80%);
   font-size: 25px;
-  cursor: pointer;
 }
 
 .display i.fas {
   display: none;
+  cursor: pointer;
+}
+.display i.fas:hover {
+  opacity: 0.5;
 }
 
 .input-data button {
@@ -81,4 +86,21 @@ body {
 }
 .input-data button:hover {
   opacity: 0.5;
+}
+.refresh {
+  height: 45px;
+  width: 20%;
+  display: none;
+  margin-top: 15px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+  background: linear-gradient(#000000, #9bc762, #eb9009);
+  border: 1px solid #444;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
